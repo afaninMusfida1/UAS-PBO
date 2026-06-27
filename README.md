@@ -85,7 +85,7 @@ Semua validasi dilempar sebagai `ValidasiException` dan ditangkap dengan
 `try-catch` di `Main.java`, sehingga program **tidak akan crash** meskipun
 input pengguna salah (contoh: NoMember cuma 5 digit, paket "Diamond", dll).
 
-## Poin OOP yang ditunjukkan saat presentasi
+## Poin OOP 
 
 - **Abstraction**: `MemberGym` abstract class, method `hitungBiaya()` dan
   `tampilkanInfo()` abstrak — wajib di-override oleh child class.
@@ -104,10 +104,3 @@ input pengguna salah (contoh: NoMember cuma 5 digit, paket "Diamond", dll).
 - **Exception handling**: custom checked exception `ValidasiException`,
   dilempar dengan `throw`, ditangkap dengan `try-catch` di banyak level.
 
-## Saran modifikasi live (kalau diminta dosen saat sesi tanya jawab)
-
-Beberapa contoh modifikasi kecil yang mudah ditambahkan langsung di kode:
-- Tambah field baru di `MemberGym` (misal `noHP`) lalu tampilkan di `tampilkanInfo()`.
-- Tambah tipe member baru, misal `MemberStudent extends MemberGym` dengan diskon.
-- Tambah validasi tambahan (misal nama tidak boleh kosong) di constructor.
-- Tambah method `cariMemberByNama()` di `Gym.java` (loop sederhana, mirip `cariMember`).
